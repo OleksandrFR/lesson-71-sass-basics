@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картка персонажа — Стів</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <article class="player-card">
+
+        <div class="player-card__avatar">
+
+            <svg width="96" height="96" viewBox="0 0 8 8" aria-label="Аватар Стіва, збірка з квадратиків">
+                <!-- волосся -->
+                <rect x="0" y="0" width="8" height="2" fill="#4a2f1b"/>
+                <rect x="0" y="2" width="1" height="1" fill="#4a2f1b"/>
+                <rect x="7" y="2" width="1" height="1" fill="#4a2f1b"/>
+                <!-- шкіра -->
+                <rect x="1" y="2" width="6" height="2" fill="#c48f5e"/>
+                <rect x="0" y="3" width="1" height="3" fill="#c48f5e"/>
+                <rect x="7" y="3" width="1" height="3" fill="#c48f5e"/>
+                <rect x="2" y="6" width="4" height="1" fill="#c48f5e"/>
+                <!-- очі -->
+                <rect x="1" y="3" width="1" height="1" fill="#4a2f8f"/>
+                <rect x="2" y="3" width="1" height="1" fill="#3aa0d8"/>
+                <rect x="5" y="3" width="1" height="1" fill="#3aa0d8"/>
+                <rect x="6" y="3" width="1" height="1" fill="#4a2f8f"/>
+                <!-- ніс і рот -->
+                <rect x="3" y="4" width="2" height="1" fill="#8c6239"/>
+                <rect x="4" y="5" width="1" height="1" fill="#6b4023"/>
+            </svg>
+
+            <h1 class="player-card__title">Стів</h1>
+            <p class="player-card__rank" aria-label="Рейтинг персонажа: 4 із 5">★★★★☆</p>
+
+        </div>
+
+        <!-- Короткий опис персонажа -->
+        <p class="player-card__text">
+            Головний герой світу Minecraft. Уміє майструвати інструменти,
+            будувати хатки з будь-чого і не боїться спуститися в печеру без факелів
+            (хоча трохи боїться).
+        </p>
+
+        <div class="player-card__skills">
+            <h2 class="player-card__subtitle">Здібності</h2>
+            <ul class="player-card__list">
+                <li>Швидке копання</li>
+                <li>Крафт інструментів</li>
+                <li>Дружба з вовками</li>
+            </ul>
+        </div>
+
+        <div class="player-card__actions">
+            <!-- Кнопка запрошення персонажа в свою команду -->
+            <button class="player-card__button" type="button">Покликати в команду</button>
+            <button class="player-card__button player-card__button--secondary" type="button">Профіль</button>
+        </div>
+
+    </article>
+
+</body>
+
+</html>

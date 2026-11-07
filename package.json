@@ -1,0 +1,15 @@
+{
+  "name": "lesson-71-sass-basics",
+  "version": "1.0.0",
+  "description": "Урок 71: SASS/SCSS підключення та базовий синтаксис — картка персонажа",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "sass --watch scss:css",
+    "build:css": "sass scss/main.scss css/main.css"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.108.1"
+  }
+}

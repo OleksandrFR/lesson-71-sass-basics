@@ -1,0 +1,106 @@
+/*
+    Картка персонажа (урок 71)
+    Стилі: рамка, заокруглення, тінь, фонові кольори, :hover на кнопках.
+    Компілюється sass'ом у css/main.css — файл main.css руками не редагувати.
+*/
+
+// змінні проєкту (базові)
+$color-page: #1d1f26;
+$color-card: #ffffff;
+$color-border: #d8d8de;
+$color-accent: #4caf50;
+$color-accent-dark: #3d8b40;
+$color-text: #2b2b2b;
+$color-text-soft: #757575;
+$color-star: #f5c518;
+$radius: 12px;
+$shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-page;
+    font-family: Arial, sans-serif;
+}
+
+.player-card {
+    width: 320px;
+    padding: 24px;
+    background: $color-card;
+    border: 2px solid $color-border;
+    border-radius: $radius;
+    box-shadow: $shadow;
+
+    &__avatar {
+        text-align: center;
+    }
+
+    &__title {
+        margin: 10px 0 4px;
+        font-size: 26px;
+    }
+
+    &__rank {
+        margin: 0;
+        color: $color-star;
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    &__text {
+        color: $color-text-soft;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    &__subtitle {
+        margin: 0 0 6px;
+        font-size: 14px;
+        color: $color-text;
+    }
+
+    &__list {
+        margin: 0;
+        padding-left: 18px;
+        color: $color-text-soft;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    &__button {
+        flex: 1;
+        padding: 10px 12px;
+        border: none;
+        border-radius: 8px;
+        background: $color-accent;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+
+        &:hover {
+            background: $color-accent-dark;
+            transform: translateY(-2px);
+        }
+
+        // друга кнопка — "другорядна"
+        &--secondary {
+            background: #ececec;
+            color: $color-text;
+
+            &:hover {
+                background: #dddddd;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*
+    Картка персонажа (урок 71)
+    Стилі: рамка, заокруглення, тінь, фонові кольори, :hover на кнопках.
+    Компілюється sass'ом у css/main.css — файл main.css руками не редагувати.
+*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d1f26;
+  font-family: Arial, sans-serif;
+}
+
+.player-card {
+  width: 320px;
+  padding: 24px;
+  background: #ffffff;
+  border: 2px solid #d8d8de;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+.player-card__avatar {
+  text-align: center;
+}
+.player-card__title {
+  margin: 10px 0 4px;
+  font-size: 26px;
+}
+.player-card__rank {
+  margin: 0;
+  color: #f5c518;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.player-card__text {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.player-card__subtitle {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #2b2b2b;
+}
+.player-card__list {
+  margin: 0;
+  padding-left: 18px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.player-card__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+.player-card__button {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.player-card__button:hover {
+  background: #3d8b40;
+  transform: translateY(-2px);
+}
+.player-card__button--secondary {
+  background: #ececec;
+  color: #2b2b2b;
+}
+.player-card__button--secondary:hover {
+  background: #dddddd;
+  transform: translateY(-2px);
+}
+
+/*# sourceMappingURL=main.css.map */
